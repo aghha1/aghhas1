@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATLASTOREDZ</title> 
+<link href='https://fonts.googleapis.com/css?family=Kufam' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>ATLASTOREDZ</h1>
+</header>
+
+<main>
+  <section>
+    <section class="titre-Produit">
+      <h2>SCIE SABRE CROWN 710W</h2>
+      <br>
+      <h2 style="color: red; direction: ltr;">5800.00 DZD</h2>
+      <br>
+      <section class="photo">
+        <img src="https://mabricole.com/6880-large_default/scie-sabre-110mm-710w-crown-ct15258.jpg" class="slide">
+        <img src="https://imagizer.imageshack.com/img924/8630/Mi66Jr.png" class="slide">
+        <img src="https://sogedim.net/wp-content/uploads/2022/06/SCIE-SABRE-710W-CT15258-CROWN-1.jpg" class="slide"> 
+        <button class="prev" onclick="plusSlides(-1)">&#10095;</button>
+        <button class="next" onclick="plusSlides(1)">&#10094;</button>
+      </section>
+    </section>
+  </section>
+
+  <form class="formulaire" action="index.php" method="post">
+    <h2 style="font-family: 'Cairo', sans-serif;">املأ الاستمارة لتقديم الطلب</h2>
+    <section class="text">
+      <input type="text" name="nom" placeholder="الاسم الكامل" required>
+      <input type="text" name="telephone" placeholder="الهاتف" required>
+      <select id="selectVille" name="ville" required>
+        <option disabled selected hidden>الولاية</option>
+        <option disabled selected hidden>الولاية</option>
+        <option>أدرار</option>
+        <option>الشلف</option>
+        <option>الأغواط</option>
+        <option>أم البواقي</option>
+        <option>باتنة</option>
+        <option>بجاية</option>
+        <option>بسكرة</option>
+        <option>بشار</option>
+        <option>البليدة</option>
+        <option>البويرة</option>
+        <option>تمنراست</option>
+        <option>تبسة</option>
+        <option>تلمسان</option>
+        <option>تيارت</option>
+        <option>تيزي وزو</option>
+        <option>الجزائر</option>
+        <option>الجلفة</option>
+        <option>جيجل</option>
+        <option>سطيف</option>
+        <option>سعيدة</option>
+        <option>سكيكدة</option>
+        <option>سيدي بلعباس</option>
+        <option>عنابة</option>
+        <option>قالمة</option>
+        <option>قسنطينة</option>
+        <option>المدية</option>
+        <option>مستغانم</option>
+        <option>المسيلة</option>
+        <option>معسكر</option>
+        <option>ورقلة</option>
+        <option>وهران</option>
+        <option>البيض</option>
+        <option>إليزي</option>
+        <option>برج بوعريريج</option>
+        <option>بومرداس</option>
+        <option>الطارف</option>
+        <option>تندوف</option>
+        <option>الوادي</option>
+        <option>خنشلة</option>
+        <option>سوق أهراس</option>
+        <option>تيبازة</option>
+        <option>ميلة</option>
+        <option>عين الدفلى</option>
+        <option>النعامة</option>
+        <option>عين تموشنت</option>
+        <option>غرداية</option>
+        <option>غليزان</option>
+        <option>تميمون</option>
+        <option>أولاد جلال</option>
+        <option>بني عباس</option>
+        <option>عين صالح</option>
+        <option>عين قزام</option>
+        <option>توقرت</option>
+        <option>المغير</option>
+        <option>المنيعة</option>    
+      </select>
+      <input type="text" name="municipalite" placeholder="البلدية" required>
+      <select id="selectLivraison" name="lieu_livraison" required>
+        <option disabled selected hidden>اختر مكان التوصيل</option>
+        <option value="domicile">باب المنزل</option>
+        <option value="bureau">مكتب 3M Express</option>
+      </select>
+      
+       <div class="case" onclick="toggleContent()">ملخص الطلبية</div>
+<div id="contenu" class="prix">
+    
+<div class="ligne-prix">
+    <p>سعر المنتج</p>
+    <p class="prix-produit">5800 د.ج</p>
+    </div>
+    
+    <div class="ligne-prix">
+    <p>سعر التوصيل</p>
+    <p id="prixLivraison"></p>
+    </div>
+    <br>
+    <hr>
+    <div class="ligne-prix">
+    <p>السعر الإجمالي</p>
+    <p id="prixTotal"></p>
+    </div>
+    
+</div>
+      
+      <button type="submit">اطلب الآن</button>     
+    </section>
+</form>
+  
+  <script src="script.js"></script>
+</main>
+</body>
+</html>
